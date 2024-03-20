@@ -17,3 +17,8 @@ Digite um número:
 
 Dica: Lembre do comando de resto da divisão inteira!
 """
+numero= int (input ("Digite um numero: "))
+if numero %2 == 0:
+   print ("par")
+else:
+    print ("impar")
