@@ -37,3 +37,10 @@ Resposta:
 Sim
 
 """
+cromossomo = input("Digite o cromossomo da variante (ex: chr17): ")
+posicao = int(input("Digite a posição da variante: "))
+
+if cromossomo == "chr17" and 41196312 <= posicao <= 41277500:
+    print("Sim, a variante está no gene BRCA1.")
+else:
+    print("Não, a variante não está no gene BRCA1.")
