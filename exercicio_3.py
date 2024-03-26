@@ -26,7 +26,8 @@ if cromossomo == "chr17":
     elif genoma_referencia == "hg38" and 43044295 <= posicao <= 43125483:
         print("Sim")
 else:
-    print("Nao")
+    print("Não")
+    
     
     
 
