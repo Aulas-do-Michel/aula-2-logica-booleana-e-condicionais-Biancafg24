@@ -29,4 +29,3 @@ if cromossomo == "chr17":
         print("Não, a variante não está no gene BRCA1.")
 else:
     print("Não, a variante não está no gene BRCA1.")
-
