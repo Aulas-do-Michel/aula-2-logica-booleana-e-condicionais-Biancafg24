@@ -22,10 +22,11 @@ genoma_referencia = input("Digite o genoma de referência da variante (hg19 ou h
 
 if cromossomo == "chr17":
     if genoma_referencia == "hg19" and 41196312 <= posicao <= 41277500:
-        print("A variante está localizada no gene BRCA1.")
+        print("Sim")
     elif genoma_referencia == "hg38" and 43044295 <= posicao <= 43125483:
-        print("A variante está localizada no gene BRCA1.")
+        print("Sim")
 else:
-    print("A variante não está no gene BRCA1.")
+    print("Nao")
+    
     
 
