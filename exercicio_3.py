@@ -16,14 +16,16 @@ Considere que a variante está no gene BRCA1 se estiver no cromossomo 17 (chr17)
 
 Obs: Tirei a Location daqui: https://grch37.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000012048;r=17:41196312-41277500
 
-cromossomo = input("Digite o cromossomo da variante (ex: chr17): ")
+cromossomo = input("Digite o cromossomo da variante ex: chr17: ")
 posicao = int(input("Digite a posição da variante: "))
 genoma_referencia = input("Digite o genoma de referência da variante (hg19 ou hg38): ")
 
 if cromossomo == "chr17":
     if genoma_referencia == "hg19" and 41196312 <= posicao <= 41277500:
-        print("Sim, a variante está no gene BRCA1.")
+        print("A variante está localizada no gene BRCA1.")
     elif genoma_referencia == "hg38" and 43044295 <= posicao <= 43125483:
-        print("Sim, a variante está no gene BRCA1.")
+        print("A variante está localizada no gene BRCA1.")
+    else:
+        print("A variante não está no gene BRCA1.")
 else:
-        print("Não, a variante não está no gene BRCA1.")
+    print("A variante não está no gene BRCA1.")
