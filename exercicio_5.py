@@ -1,4 +1,4 @@
-"""
+
 ### Exercício 5 - Analisador de Variantes Genéticas.
 
 Você está analisando uma variante genética e precisa saber se ela é relevante para análise ou não.
@@ -26,62 +26,7 @@ Se ela não for um artefato temos que avaliar as seguintes coisas:
 Obs: Uma resolução desse exercício está no Colab da Aula 02. Tente primeiro fazer sozinho! 
 Se não passar nos testes, qualquer coisa consulte lá depois para ver o que você poderia ter feito diferente.
 
-Exemplos:
 
-Digite a frequencia populacional (em porcentagem): 1
-
-Digite o gene: BRCA2
-
-Digite a Impacto (ALTO ou BAIXO): ALTO
-
-Digite os reads: 1000
-
-Digite a frequencia alélica (em porcentagem): 50
-
-Resposta: É relevante.
-
--------
-
-Digite a frequencia populacional (em porcentagem): 50
-
-Digite o gene: HFE
-
-Digite a Impacto (ALTO ou BAIXO): ALTO
-
-Digite os reads: 1000
-
-Digite a frequencia alélica (em porcentagem): 50
-
-Resposta: É relevante.
-
-------
-
-Digite a frequencia populacional (em porcentagem): 10
-
-Digite o gene: BRCA1
-
-Digite a Impacto (ALTO ou BAIXO): Baixo
-
-Digite os reads: 1000
-
-Digite a frequencia alélica (em porcentagem): 50
-
-Resposta: Não é relevante.
-
-------
-
-Digite a frequencia populacional (em porcentagem): 0
-
-Digite o gene: HFE
-
-Digite a Impacto (ALTO ou BAIXO): ALTO
-
-Digite os reads: 1
-
-Digite a frequencia alélica (em porcentagem): 100
-
-Resposta: Não é relevante.
-"""
 frequencia_populacional = float(input("Digite a frequência populacional da variante (em %): "))
 gene = input("Digite o gene da variante: ")
 impacto = input("Digite o impacto da variante (ALTO ou BAIXO): ")
