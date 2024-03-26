@@ -25,7 +25,5 @@ if cromossomo == "chr17":
         print("Sim, a variante está no gene BRCA1.")
     elif genoma_referencia == "hg38" and 43044295 <= posicao <= 43125483:
         print("Sim, a variante está no gene BRCA1.")
-    else:
-        print("Não, a variante não está no gene BRCA1.")
 else:
-    print("Não, a variante não está no gene BRCA1.")
+        print("Não, a variante não está no gene BRCA1.")
