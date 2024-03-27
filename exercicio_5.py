@@ -26,18 +26,22 @@
 #Obs: Uma resolução desse exercício está no Colab da Aula 02. Tente primeiro fazer sozinho! 
 #Se não passar nos testes, qualquer coisa consulte lá depois para ver o que você poderia ter feito diferente.
 
+frequencia_populacional = float(input('Digite a frequencia populacional (em porcentagem):'))
+gene = input('Digite o gene:')
+impacto = input('Digite o Impacto (ALTO ou BAIXO):')
+reads = float(input('Digite os reads:'))
+frequencia_alelica = float(input('Digite a frequencia alélica (em porcentagem):'))
 
-frequencia_populacional = float(input("Digite a frequência populacional da variante (em %): "))
-gene = input("Digite o gene da variante: ")
-impacto = input("Digite o impacto da variante (ALTO ou BAIXO): ")
-reads = int(input("Digite a quantidade de reads da variante: "))
-vaf = float(input("Digite a frequência alélica da variante (em %): "))
+eh_artefato = (frequencia_alelica < 20) or (reads < 10)
+impacto_baixo = impacto == 'BAIXO'
+esta_em_genes_de_excecao = (gene == 'HFE') or (gene == 'MEFV') or (gene == 'GJB2')
+frequencia_populacional_alta = frequencia_populacional > 5
 
-if reads < 10 or vaf < 20:
-    print("A variante não é relevante para análise, pois deve ser um artefato.")
+if eh_artefato:
+    print('Não é relevante.')
+elif impacto_baixo or (frequencia_populacional_alta and not esta_em_genes_de_excecao):
+    print('Não é relevante.')
 else:
-    if impacto == "ALTO" and (frequencia_populacional <= 5 or gene not in ["HFE", "MEFV", "GJB2"]):
-        print("A variante é relevante para análise.")
-    else:
-        print("A variante não é relevante para análise.")
+    print('É relevante.') 
+    
         
