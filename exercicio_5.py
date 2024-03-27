@@ -34,9 +34,10 @@ reads = int(input("Digite a quantidade de reads da variante: "))
 vaf = float(input("Digite a frequência alélica da variante (em %): "))
 
 if reads < 10 or vaf < 20:
-    print("A variante não é relevante para análise, pois pode ser um artefato.")
+    print("A variante não é relevante para análise, pois deve ser um artefato.")
 else:
     if impacto == "ALTO" and (frequencia_populacional <= 5 or gene not in ["HFE", "MEFV", "GJB2"]):
         print("A variante é relevante para análise.")
     else:
         print("A variante não é relevante para análise.")
+        
