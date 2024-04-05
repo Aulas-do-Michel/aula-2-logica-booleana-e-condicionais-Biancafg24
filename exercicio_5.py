@@ -38,13 +38,13 @@ esta_em_genes_de_excecao = (gene == 'HFE') or (gene == 'MEFV') or (gene == 'GJB2
 frequencia_populacional_alta = frequencia_populacional > 5
 
 
-if eh_artefato:
+if (reads < 10 or frequencia_alelica < 20):
     print('Não é relevante.')
 elif impacto == 'ALTO':
     print('É relevante.')
-elif frequencia_populacional > 5 and esta_em_genes_de_excecao:
+elif frequencia_alelica > 5 or !esta_em_genes_de_excecao:
     print('Não é relevante.')
-else:
-    print('É relevante.') 
+else :
+    print('Não é relevante.')
     
         
