@@ -32,19 +32,14 @@ impacto = input('Digite o Impacto (ALTO ou BAIXO):')
 reads = int(input('Digite os reads:'))
 frequencia_alelica = float(input('Digite a frequencia alélica (em porcentagem):'))
 
-eh_artefato = (frequencia_alelica < 20) or (reads < 10)
-impacto_baixo = impacto == 'BAIXO'
-esta_em_genes_de_excecao = (gene == 'HFE') or (gene == 'MEFV') or (gene == 'GJB2')
-frequencia_populacional_alta = frequencia_populacional > 5
-
-
-if (reads < 10 or frequencia_alelica < 20):
-    print('Não é relevante.')
+if reads < 10 or frequencia alelica < 20:
+    print('Não é relevante')
 elif impacto == 'ALTO':
-    print('É relevante.')
-elif frequencia_alelica > 5 or !esta_em_genes_de_excecao:
-    print('Não é relevante.')
-else :
-    print('Não é relevante.')
-    
+    print('É relevante')
+elif frequencia_alelica > 5 and gene != "HFE" and gene != "MEFV" and gene =! "GJB2":
+    print('Não é relevante')
+else:
+    ('Não é relevante')
+
+
         
