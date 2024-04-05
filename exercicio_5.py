@@ -39,9 +39,11 @@ frequencia_populacional_alta = frequencia_populacional > 5
 
 if eh_artefato:
     print('Não é relevante.')
-elif impacto_baixo or (frequencia_populacional_alta and not esta_em_genes_de_excecao):
+elif impacto == 'ALTO':
+    print('É relevante')
+elif frequencia_populacional > 5 and esta_em_genes_de_excecao:
     print('Não é relevante.')
 else:
-    print('É relevante.') 
+    print('É relevante.')  
     
         
